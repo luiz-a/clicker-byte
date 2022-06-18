@@ -1,0 +1,78 @@
+.container {
+    position: absolute;
+
+    width: 500px;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 200px;
+    height: 400px;
+    text-align: center;
+    margin-bottom: 20px
+};
+
+/* ---------------------------------- */
+.text-center{
+	color:#fff;	
+	text-transform:uppercase;
+    font-size: 14px;
+    margin: -50px 0 80px 0;
+    display: block;
+    text-align: center;
+}
+.input-container{
+	position:relative;
+	margin-bottom:25px;
+}
+.input-container label{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:14px;
+	color:#fff;	
+	transition: all 0.5s ease-in-out;
+}
+.input-container input{ 
+  border:0;
+  border-bottom:1px solid #555;  
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:14px;
+  color:#fff;
+}
+.input-container input:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:1px solid #155E12;	
+}
+.btn{
+	color:#fff;
+	background-color:#155E12;
+	outline: none;
+    border: 0;
+	padding:10px 20px;
+	text-transform:uppercase;
+	margin-top:50px;
+	border-radius: 18px;
+    box-shadow: -4px 4px rgba(0, 0, 0, 0.4);
+	cursor:pointer;
+	position:relative;
+    transition: 0.5s;
+}
+.btn:active {
+    background-color:#094207;
+    transform: translateY(4px);
+}
+.input-container input:focus ~ label,
+.input-container input:valid ~ label{
+	top:-12px;
+	font-size:12px;
+}
